@@ -6,7 +6,7 @@
                 <a href="{{ route('gallery.index') }}" class="btn btn-primary btn-sm">Back</a>
             </div>
             <div class="card-body">
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="{{ route('gallery.update', $gallery->id) }}" method="post" enctype="multipart/form-data">
                     @csrf
                     @method('put')
                     <div class="form-group">

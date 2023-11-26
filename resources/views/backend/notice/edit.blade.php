@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5>Notice Edit Page</h5>
-                <a href="{{ route('notice.index') }}">Back</a>
+                <a href="{{ route('notice.index') }}" class="btn btn-primary btn-sm">Back</a>
             </div>
             <div class="card-body">
                 <form action="{{ route('notice.update', $notice->id) }}" method="post">
@@ -11,15 +11,17 @@
                     @method('put')
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input id="title" class="form-control" type="text" name="title">
+                        <input id="title" class="form-control" type="text" name="title"
+                            value="{{ $notice->title }}">
                     </div>
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <textarea id="description" class="form-control" name="description" rows="3"></textarea>
+                        <textarea id="description" class="form-control" name="description" rows="3">{{ $notice->description }}</textarea>
                     </div>
                     <div class="form-group">
                         <label for="date">Text</label>
-                        <input id="date" class="form-control" type="date" name="date">
+                        <input id="date" class="form-control" type="date" name="date"
+                            value="{{ $notice->date }}">
                     </div>
                     <button type="submit" class="btn btn-primary btn-sm">Save</button>
             </div>

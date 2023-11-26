@@ -1,4 +1,134 @@
 <x-frontendlayout>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-2">
+                    <h5 class="text-secondary">Notice:</h5>
+                </div>
+                <div class="col-md-10">
+                    <div class="text-primary">
+                        <marquee behavior="scroll" direction="right"><i class="fa-solid fa-bullhorn"></i>Admission
+                            Open!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fa-solid fa-bullhorn"></i>Admission
+                            Open!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fa-solid fa-bullhorn"></i>Admission
+                            Open!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fa-solid fa-bullhorn"></i>Admission
+                            Open!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fa-solid fa-bullhorn"></i>Admission Open!!!
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <x-carousel />
-    <x-owl />
+    <section>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4 m-2 text-secondary">
+                    <img src="{{ asset($about->image) }}" class="mt-5" alt="">
+                    <p class="text-center text-primary">Principal DK Khanal</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-center text-primary mb-0">Prinicipal's Perception</p>
+                    {!! $about->description !!}
+                </div>
+                <div class="col-md-1"
+                    style=" width: 1px;
+                background-color: #d1cccc;
+                height: 390px;
+                margin: 0 40px;">
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="col-md-12 background">
+            <div class="row p-3">
+                <div class="col-md-3">
+                    <div class="text-center 2xs"><i class="fa-solid fa-lightbulb fa-2x"></i></div>
+                    <h3 class="text-center">Our Mission</h3>
+                    <p>
+                        "Our school empowers all our students to dream big, believe in their abilities to achieve the
+                        dreams through their academic excellence along with their emotional, social and physical
+                        well-being."</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center"> <i class="fa-solid fa-diagram-successor fa-2x"></i></div>
+                    <h3 class="text-center">Our Vision</h3>
+                    <p>"We understand ever individual child is unique with their own god gifted potentials. We aim to
+                        hone their talent to excel in life and make a rich for themselves through love, care and
+                        inspiration."</p>
+                </div>
+                <div class="col-md-5">
+                    <div class="text-center"><i class="fa-solid fa-chalkboard-user fa-2x"></i></div>
+                    <h3 class="text-center">Teaching-Learning Pedagogies</h3>
+                    <li>Project Based Learning</li>
+                    <li>Using Multiple Intelligence in teaching-learning</li>
+                    <li>Lecture, Role-Play, Interactive-Learning,Group-Works, Task-Based Learning,
+                        Cross-Curricular-Method are used while teaching-learning</li>
+                    <li>A blend of Eastern and Western educational philosophies are applied</li>
+                    <li>Emphasis is on learning by doing,rather than rot learning</li>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div>
+        <h3 class="text-center text-secondary font-serif">Staff Members</h3>
+        <x-owl />
+    </div>
+    <section class="border m-2 background">
+        <h3 class="text-center">Our Facilities</h3>
+        <h6 class="text-center text-secondary">"Providing the best school facilities involves a holistic approach that
+            takes into account the physical environment, educational resources, and the well-being of students and
+            staff. It's about creating a nurturing and inspiring environment where students can learn, grow, and
+            thrive."</h6>
+        <div class="col-md-12">
+            <div class="row">
+                @foreach ($facilities as $facility)
+                    <div class="col-md-3">
+                       <a href="{{route('facilityus')}}">
+                        <div class="san">
+                            <img src="{{ asset($facility->image) }}" class="image-fluid" alt="">
+                        </div>
+                       </a>
+                        <a href="{{ route('facilityus') }}">
+                            <div class="text-center text-primary">
+                                {{ $facility->title }}
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+   <section>
+    <h3 class="text-center">School Events</h3>
+    <div class="col-md-12 m-2">
+        <div class="row">
+            @foreach ($events as $event)
+                <div class="col-md-3">
+                   <a href="{{route('eventus')}}">
+                    <div class="san">
+                        <img src="{{ asset($event->image) }}" class="image-fluid" alt="">
+                    </div>
+                   </a>
+                    <a href="{{ route('eventus') }}">
+                        <div class="text-center text-primary">
+                            {{ $event->title }}
+                        </div>
+                    </a>
+                </div>
+            @endforeach
+        </div>
+    </div>
+   </section>
+
+
+
 </x-frontendlayout>

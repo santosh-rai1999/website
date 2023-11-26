@@ -3,6 +3,7 @@
 use App\Http\Controllers\Backend\AboutController;
 use App\Http\Controllers\Backend\CarouselController;
 use App\Http\Controllers\Backend\EventController;
+use App\Http\Controllers\Backend\FacilityController;
 use App\Http\Controllers\Backend\GalleryController;
 use App\Http\Controllers\Backend\NoticeController;
 use App\Http\Controllers\Backend\StaffController;
@@ -26,8 +27,12 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/aboutus',[FrontendController::class,'about'])->name('about');
 Route::get('/',[FrontendController::class,'home'])->name('home');
-Route::get('/staff',[FrontendController::class,'staff'])->name('staff');
+Route::get('/staffus',[FrontendController::class,'staff'])->name('staff');
 Route::get('/notices',[FrontendController::class,'notice'])->name('notice');
+Route::get('/facilityus',[FrontendController::class,'facility'])->name('facilityus');
+Route::get('/galleryus',[FrontendController::class,'galleries'])->name('galleryus');
+Route::get('/singlegallery/{id}',[FrontendController::class,'gallery'])->name('singlegallery');
+Route::get('/eventus',[FrontendController::class,'events'])->name('eventus');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -44,6 +49,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('gallery',GalleryController::class)->names('gallery');
     Route::resource('carousel',CarouselController::class)->names('carousel');
     Route::resource('facility',FacilityController::class)->names('facility');
+    Route::resource('contact',ContactController::class)->names('contact');
 });
 
 require __DIR__.'/auth.php';

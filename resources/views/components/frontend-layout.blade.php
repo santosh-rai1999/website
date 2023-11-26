@@ -12,21 +12,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/owl/owl.carousel.css">
     <style>
         .img {
-            mix-blend-mode: multiply;
+            mix-blend-mode: darken;
         }
 
         .font {
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 60px;
 
-        }
-
-        .color {
-            background-color: lightslategray;
         }
 
         .foot {
@@ -45,50 +43,87 @@
             object-fit: cover;
         }
 
-        main {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            min-height: 100vh;
 
-        }
-
-        #owl-demo .item {
-            /* background: #42bdc2; */
-            padding: 30px 0px;
-            margin: 10px;
+        */ #owl-demo .item {
             color: #FFF;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
-            border-radius: 3px;
+            border-radius: 2px;
             text-align: center;
         }
+
         .item img {
-            height: 300px;
+            height: 350px;
             width: 60%;
+            margin-top: -30px;
             object-fit: cover;
         }
+
+        .san img {
+            height: 250px;
+            width: 100%;
+            mix-blend-mode: multiply;
+            object-fit: cover;
+
+        }
+
+        /* .san img:hover {
+            transition: 1s;
+            transform: scale(1.1)
+        } */
+
+        .background {
+            background-color: whitesmoke;
+            /* width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size:cover; */
+
+
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        /* .lining {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-clamp: 2;
+            max-height:2em;
+
+        } */
+
+
     </style>
 </head>
 
 <body>
-
     <div class="main">
-        <header class="color">
+        <header style="background-color: lightslategray;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 p-2 img">
                         <img src="https://play-lh.googleusercontent.com/SHE9kapapV5giaqOm7iyVSbCngHJG5zScOq0yvOKdjIZmr3RGSV3v0tyw-BlyxK08cJl"
                             height="200" width="200" alt="">
                     </div>
-                    <div class="col-md-10 py-5">
+                    <div class="col-md-8 py-5">
                         <h1 class="font" style="color: brown">Siddhartha Shishu Sadan<h1>
-                                <h5 class="p-1 me-4" style="color:brown">"Together We Learn, Together We Grow"</h5>
+                                <h5 class="p-1 me-4" style="color:white">"Together We Learn, Together We Grow"</h5>
+
                     </div>
+                    <div class="col-md-2 d-flex justify-content-between align-items-center ">
+                        <h6 class="text-black" style="margin-top: 80%">Contact no:-+977-25-523467 <br>info@siddharthashishusadan.com </h6>
+                    </div>
+
                 </div>
             </div>
-            <x-navbar-component />
         </header>
+        <div>
+            <x-navbar-component />
+        </div>
 
         <main class="wrapper">
             {{ $slot }}
@@ -99,23 +134,27 @@
             <div class="container">
                 <div class="row p-2">
                     <div class="col-md-4">
-                        <h5 class="py-2">Contact Us</h5>
+                        <h5 class="py-2 text-white">Contact Us</h5>
                         <p> Siddhartha Sishu Sadan</p>
                         <p><i class="fa-solid fa-location-crosshairs text-2xl"></i> Dharan-16 Annapurna Chowk</p>
                         <p><i class="fa-solid fa-envelope text-2xl"></i> info@siddharthashishusadan.com</p>
                         <p><i class="fa-solid fa-phone text-2xl"></i> +977-25-523467 | 9825394959</p>
                     </div>
                     <div class="col-md-4">
-                        <h5>Quick Link</h5>
-                        <a href="/" class="text-black">Home</a><br>
-                        <a href="/aboutus" class="text-black">About</a><br>
-                        <a href="" class="text-black">Gallery</a><br>
-                        <a href="" class="text-black">Notice</a><br>
-                        <a href="" class="text-black">Contact</a><br>
+                        <h5 class="text-white">Quick Link</h5>
+                        <a href="/" class="text-black m-2" >Home</a><br>
+                        <a href="/aboutus" class="text-black m-2" >About</a><br>
+                        <a href="/galleryus" class="text-black m-2">Gallery</a><br>
+                        <a href="/notices" class="text-black m-2">Notice</a><br>
+                        <a href="/staffus" class="text-black m-2">Staffs</a><br>
+                        {{-- <a href="" class="text-black">Events</a><br> --}}
+                        <a href="/facilityus" class="text-black m-2">Facilities</a><br>
+
+
 
                     </div>
                     <div class="col-md-4">
-                        <h5>Location</h5>
+                        <h5 class="text-center text-white">Location</h5>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14242.648482944307!2d87.2862987!3d26.8188851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef4175e4f26a95%3A0x9b8526c7c4c7bc1c!2sCode%20IT!5e0!3m2!1sen!2snp!4v1694776849040!5m2!1sen!2snp"
                             width="100%ss" height="200" style="border:0;" allowfullscreen="" loading="lazy"
@@ -138,14 +177,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-QAc08ipPd7ElgrEsKMj9mFi1LOYhEBBeusKfVSXktZSjlm5BIThey5q7IEYtZVixxC+lIN6CnSZCfI4s00Dq3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
-    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
-
     <script src="/owl/owl.carousel.js"></script>
     <script>
-        // $(document).ready(function() {
-        //     $(".owl-carousel").owlCarousel();
-        // });
         $(document).ready(function() {
 
             $("#owl-demo").owlCarousel({

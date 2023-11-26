@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use App\Models\Events;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Event;
 
 class EventController extends Controller
 {
@@ -66,6 +67,7 @@ class EventController extends Controller
      */
     public function update(Request $request, string $id)
     {
+        dd($request->all());
         $event = Events::find($id);
         $event->title = $request->title;
         $event->description = $request->description;

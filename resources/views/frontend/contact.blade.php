@@ -1,0 +1,3 @@
+<x-frontendlayout>
+
+</x-frontendlayout>

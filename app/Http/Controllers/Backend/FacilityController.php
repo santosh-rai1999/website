@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Facilities;
 use Illuminate\Http\Request;
 
 class FacilityController extends Controller
@@ -12,7 +13,8 @@ class FacilityController extends Controller
      */
     public function index()
     {
-        //
+        $facilities = Facilities::all();
+        return view('backend.facilities.index', compact('facilities'));
     }
 
     /**
@@ -20,7 +22,7 @@ class FacilityController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.facilities.create');
     }
 
     /**
@@ -28,7 +30,12 @@ class FacilityController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $facility = new Facilities();
+        $facility->title = $request->title;
+        $facility->description = $request->description;
+        uploadImage($request,$facility,"image");
+        $facility->save();
+        return redirect()->back();
     }
 
     /**
@@ -44,7 +51,8 @@ class FacilityController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $facility = Facilities::find($id);
+        return view('backend.facilities.edit',compact('facility'));
     }
 
     /**
@@ -52,7 +60,12 @@ class FacilityController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $facility =  Facilities::find($id);
+        $facility->title = $request->title;
+        $facility->description = $request->description;
+        uploadImage($request,$facility,"image");
+        $facility->update();
+        return redirect()->back();
     }
 
     /**
@@ -60,6 +73,8 @@ class FacilityController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $facility = Facilities::find($id);
+        $facility->delete();
+        return redirect()->back();
     }
 }

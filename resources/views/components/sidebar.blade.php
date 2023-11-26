@@ -36,7 +36,7 @@
                             data-feather="users"></i><span>Carousel</span></a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="nav-link"><i data-feather="users"></i><span>Facilities</span></a>
+                    <a href="{{route('facility.index')}}" class="nav-link"><i data-feather="users"></i><span>Facilities</span></a>
                 </li>
 
             </ul>
