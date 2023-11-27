@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
+use App\Models\About;
 use App\Models\Events;
 use App\Models\Facilities;
 use App\Models\Gallery;
@@ -14,6 +15,7 @@ class FrontendController extends BaseController
 {
     public function about()
     {
+
         return view('frontend.about');
     }
     public function home()

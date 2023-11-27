@@ -74,14 +74,9 @@
 
         .background {
             background-color: whitesmoke;
-            /* width: 100%;
-            height: 100vh;
-            background-repeat: no-repeat;
-            background-size:cover; */
-
 
         }
-
+        
         p {
             margin-bottom: 0;
         }

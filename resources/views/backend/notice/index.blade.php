@@ -24,7 +24,7 @@
                         {{-- <td>{{ \Carbon\Carbon::parse($notice->created_at)->format('d-M-y') }}</td> --}}
                         <td>{{$notice->created_at->format('d-Y-M')}}</td>
                         <td>
-                            <form action="{{route('about.destroy',$notice->id)}}" method="post">
+                            <form action="{{route('notice.destroy',$notice->id)}}" method="post">
                                 @csrf
                                 @method('delete')
                                 <a href="{{route('notice.edit',$notice->id)}}" class="btn btn-primary btn-sm">Edit</a>

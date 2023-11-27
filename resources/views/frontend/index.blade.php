@@ -24,22 +24,32 @@
     </div>
     <x-carousel />
     <section>
-        <div class="col-md-12">
+        <div class="col-md-12" style="background-color: white">
             <div class="row">
-                <div class="col-md-4 m-2 text-secondary">
+                {{-- <div class="col-md-4 m-2 text-secondary">
                     <img src="{{ asset($about->image) }}" class="mt-5" alt="">
                     <p class="text-center text-primary">Principal DK Khanal</p>
+                </div> --}}
+                <div class="col-md-5 m-3">
+                    <h4 class="text-center text-primary mb-0" style="text-decoration: underline">About</h4>
+                    {{-- {!! $about->description !!} --}}
+                    <p>Siddhartha Sishu Sadaan School, Dharan is the fore runner of quality education in Nepal. To date, the campus has produced more than 500 highly qualified students.The scope of food technology education in Nepal has increased dramatically in the past few years.Dream, Believe, Achieve... are three simple yet very powerful words for our belief-system to succeed. We believe, Dreams are there to be Achieved. Contemporary education is not only about imparting education but it's more about acquiring it with life skills such as Leadership Skills, Communication Skills, Decision-Making Skills, Risk-Taking Skills, Resilience, Creativity etc. to name the few.Once Albert Einstein said "Imagination is more important than Knowledge". "We must encourage kids to think beyond the box e.g. To Be Imaginative. In our society, our young minds and souls are deprived of being Imaginative, hence limiting their growth. Dreams and Imaginations are complementary to each-other and my job as a Principal is to provide them that stepping stones to make every child flourish and excel inn their respective set dreams.</p>
                 </div>
-                <div class="col-md-6">
-                    <p class="text-center text-primary mb-0">Prinicipal's Perception</p>
-                    {!! $about->description !!}
-                </div>
-                <div class="col-md-1"
+                {{-- <div class="col-md-2"
                     style=" width: 1px;
                 background-color: #d1cccc;
                 height: 390px;
                 margin: 0 40px;">
 
+                </div> --}}
+                <div class="col-md-4">
+                    <h4 class="text-primary" style="text-decoration: underline">Notice</h4>
+                    @foreach ($notices as $notice)
+                  <div class="p-1 text-secondary" style="text-decoration:underline">
+                    {{$notice->title}}
+                  </div>
+
+                    @endforeach
                 </div>
 
             </div>
