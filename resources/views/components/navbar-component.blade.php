@@ -7,15 +7,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{route('about')}}">About</a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link" href="{{route('notice')}}">Notice</a>
-            </li>
+            </li> --}}
             <li class="nav-item">
                 <a class="nav-link" href="{{route('facilityus')}}">Facilities</a>
             </li>
-            {{-- <li class="nav-item">
-                <a class="nav-link" href="#">Events</a>
-            </li> --}}
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('eventus')}}">Events</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('staff')}}">Staff</a>
             </li>
