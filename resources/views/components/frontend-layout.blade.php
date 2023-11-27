@@ -72,11 +72,11 @@
             transform: scale(1.1)
         } */
 
-        .background {
+        /* .background {
             background-color: whitesmoke;
 
-        }
-        
+        } */
+
         p {
             margin-bottom: 0;
         }
