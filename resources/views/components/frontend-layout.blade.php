@@ -72,25 +72,9 @@
             transform: scale(1.1)
         } */
 
-        /* .background {
-            background-color: whitesmoke;
-
-        } */
-
         p {
             margin-bottom: 0;
         }
-
-        /* .lining {
-            display: block;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            line-clamp: 2;
-            max-height:2em;
-
-        } */
-
 
     </style>
 </head>
@@ -110,7 +94,7 @@
 
                     </div>
                     <div class="col-md-2 d-flex justify-content-between align-items-center ">
-                        <h6 class="text-black" style="margin-top: 80%">Contact no:-+977-25-523467 <br>info@siddharthashishusadan.com </h6>
+                        <h6 class="text-black" style="margin-top: 80%"> <i class="fa-solid fa-phone text-2xl"> </i>Contact no:-+977-25-523467 info@siddharthashishusadan.com</h6>
                     </div>
 
                 </div>
@@ -129,14 +113,14 @@
             <div class="container">
                 <div class="row p-2">
                     <div class="col-md-4">
-                        <h5 class="py-2 text-white">Contact Us</h5>
+                        <h5 class="py-2 text-white">CONTACT US</h5>
                         <p> Siddhartha Sishu Sadan</p>
                         <p><i class="fa-solid fa-location-crosshairs text-2xl"></i> Dharan-16 Annapurna Chowk</p>
                         <p><i class="fa-solid fa-envelope text-2xl"></i> info@siddharthashishusadan.com</p>
                         <p><i class="fa-solid fa-phone text-2xl"></i> +977-25-523467 | 9825394959</p>
                     </div>
                     <div class="col-md-4">
-                        <h5 class="text-white">Quick Link</h5>
+                        <h5 class="text-white">QUICK LINK</h5>
                         <a href="/" class="text-black m-2" >Home</a><br>
                         <a href="/aboutus" class="text-black m-2" >About</a><br>
                         <a href="/galleryus" class="text-black m-2">Gallery</a><br>
@@ -149,7 +133,7 @@
 
                     </div>
                     <div class="col-md-4">
-                        <h5 class="text-center text-white">Location</h5>
+                        <h5 class="text-center text-white">LOCATION</h5>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14242.648482944307!2d87.2862987!3d26.8188851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef4175e4f26a95%3A0x9b8526c7c4c7bc1c!2sCode%20IT!5e0!3m2!1sen!2snp!4v1694776849040!5m2!1sen!2snp"
                             width="100%ss" height="200" style="border:0;" allowfullscreen="" loading="lazy"

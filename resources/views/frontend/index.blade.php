@@ -31,7 +31,7 @@
                     <p class="text-center text-primary">Principal DK Khanal</p>
                 </div> --}}
                 <div class="col-md-6">
-                    <h4 class="text-center text-primary" style="text-decoration: underline">About Administration</h4>
+                    <h4 class="text-center text-primary" style="text-decoration: underline">ABOUT ADMINISTRATION</h4>
                     {{-- {!! $about->description !!} --}}
                     <p class="m-4">Siddhartha Sishu Sadaan School, Dharan is the fore runner of quality education in
                         Nepal. To date, the campus has produced more than 500 highly qualified students.The scope of
@@ -44,36 +44,40 @@
                         encourage kids to think beyond the box e.g. To Be Imaginative. In our society, our young minds
                         and souls are deprived of being Imaginative, hence limiting their growth. Dreams and
                         Imaginations are complementary to each-other and my job as a Principal is to provide them that
-                        stepping stones to make every child flourish and excel inn their respective set dreams.</p>
+                        stepping stones to make every child flourish and excel in their respective set dreams.</p>
                 </div>
                 <div class="col-md-3">
-                    <h4 class="text-center text-primary mb-3" style="text-decoration: underline">Director</h4>
+                    <h4 class="text-center text-primary mb-3" style="text-decoration: underline">DIRECTOR</h4>
                     <div>
                         <img src="{{ asset($about->image) }}" style="width: 322px; height: 200px; object-fit:cover"
                             alt="">
                     </div>
-                   <p class="m-1 text-center text-primary">Prof.Julliet Rossali</p>
-                   <p class="text-center text-secondary"><i class="fa-solid fa-envelope text-2xl"></i>Julliet939@gmail.com</p>
-                   <p class="text-center text-secondary"><i class="fa-solid fa-location-crosshairs text-2xl"></i> Dharan-16 Annapurna Chowk</p>
-                   <p class="text-center text-secondary"><i class="fa-solid fa-phone text-2xl"></i> +977-25-523467 | 9825394959</p>
+                    <p class="m-1 text-center text-primary">Prof.Julliet Rossali</p>
+                    <p class="text-center text-secondary"><i
+                            class="fa-solid fa-envelope text-2xl"></i>Julliet939@gmail.com</p>
+                    <p class="text-center text-secondary"><i class="fa-solid fa-location-crosshairs text-2xl"></i>
+                        Dharan-16 Annapurna Chowk</p>
+                    <p class="text-center text-secondary"><i class="fa-solid fa-phone text-2xl"></i> +977-25-523467 |
+                        9825394959</p>
                 </div>
                 <div class="col-md-2">
-                    <h4 class="text-primary" style="text-decoration: underline">Notice</h4>
+                    <h4 class="btn btn-danger btn-sm border">NOTICE</h4>
                     @foreach ($notices as $notice)
                         <div class="p-1 text-secondary">
                             {!! $notice->description !!}
                             <div class="px-1">
                                 <span class="text-xm text-black"><i
                                         class="fa-regular fa-clock"></i>{{ $notice->created_at->diffForHumans() }}</span>
+                                        <hr>
 
                             </div>
 
                         </div>
                     @endforeach
                     <div class="m-3">
-                       <a href="">
-                        <h5 class="btn btn-primary btn-sm">Admission Form</h5>
-                       </a>
+                        <a href="/admission">
+                            <h5 class="btn btn-primary btn-sm">Admission Form</h5>
+                        </a>
                     </div>
                 </div>
 
@@ -82,7 +86,7 @@
         </div>
     </section>
     <section>
-        <div class="col-md-12 background">
+        <div class="col-md-12 background border">
             <div class="row p-3">
                 <div class="col-md-3">
                     <div class="text-center 2xs"><i class="fa-solid fa-lightbulb fa-2x"></i></div>
@@ -111,14 +115,13 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
     <div>
-        <h3 class="text-center text-secondary font-serif">Staff Members</h3>
+        <h3 class="text-center text-success">STAFF MEMBERS</h3>
         <x-owl />
     </div>
-    <section class="border m-2 background">
-        <h3 class="text-center">Our Facilities</h3>
+    <section class="m-2">
+        <h3 class="text-center text-success">OUR FACILITIES</h3>
         <h6 class="text-center text-secondary">"Providing the best school facilities involves a holistic approach that
             takes into account the physical environment, educational resources, and the well-being of students and
             staff. It's about creating a nurturing and inspiring environment where students can learn, grow, and
@@ -133,7 +136,7 @@
                             </div>
                         </a>
                         <a href="{{ route('facilityus') }}">
-                            <div class="text-center text-primary">
+                            <div class="text-center text-primary" style="text-decoration: none">
                                 {{ $facility->title }}
                             </div>
                         </a>

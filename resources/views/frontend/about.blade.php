@@ -3,7 +3,7 @@
         <h4 class="text-center py-2 text-primary" style="text-decoration: none">Message From Director</h4>
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-7 mx-5 text-secondary">
+                <div class="col-md-7 mx-5">
                     {!!$about->description!!}
                 </div>
                 <div class="col-md-3">

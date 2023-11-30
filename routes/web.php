@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\AboutController;
+use App\Http\Controllers\Backend\AdmissionController;
 use App\Http\Controllers\Backend\CarouselController;
 use App\Http\Controllers\Backend\EventController;
 use App\Http\Controllers\Backend\FacilityController;
@@ -33,6 +34,8 @@ Route::get('/facilityus',[FrontendController::class,'facility'])->name('facility
 Route::get('/galleryus',[FrontendController::class,'galleries'])->name('galleryus');
 Route::get('/singlegallery/{id}',[FrontendController::class,'gallery'])->name('singlegallery');
 Route::get('/eventus',[FrontendController::class,'events'])->name('eventus');
+Route::get('/admission',[FrontendController::class,'admission'])->name('admission');
+Route::post('/postadmission',[FrontendController::class,'postadmission'])->name('postadmission');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -50,6 +53,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('carousel',CarouselController::class)->names('carousel');
     Route::resource('facility',FacilityController::class)->names('facility');
     Route::resource('contact',ContactController::class)->names('contact');
+    // Route::resource('admission',AdmissionController::class)->names('admission');
 });
 
 require __DIR__.'/auth.php';
