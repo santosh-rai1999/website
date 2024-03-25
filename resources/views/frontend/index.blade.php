@@ -26,12 +26,8 @@
     <section>
         <div class="col-md-12" style="background-color: white">
             <div class="row">
-                {{-- <div class="col-md-4 m-2 text-secondary">
-                    <img src="{{ asset($about->image) }}" class="mt-5" alt="">
-                    <p class="text-center text-primary">Principal DK Khanal</p>
-                </div> --}}
                 <div class="col-md-6">
-                    <h4 class="text-center text-primary" style="text-decoration: underline">ABOUT ADMINISTRATION</h4>
+                    <h4 class="text-center text-primary" style="text-decoration: none">ABOUT ADMINISTRATION</h4>
                     {{-- {!! $about->description !!} --}}
                     <p class="m-4">Siddhartha Sishu Sadaan School, Dharan is the fore runner of quality education in
                         Nepal. To date, the campus has produced more than 500 highly qualified students.The scope of
@@ -47,12 +43,12 @@
                         stepping stones to make every child flourish and excel in their respective set dreams.</p>
                 </div>
                 <div class="col-md-3">
-                    <h4 class="text-center text-primary mb-3" style="text-decoration: underline">DIRECTOR</h4>
+                    <h4 class="text-center text-primary mb-3" style="text-decoration: none">DIRECTOR</h4>
                     <div>
-                        <img src="{{ asset($about->image) }}" style="width: 322px; height: 200px; object-fit:cover"
+                        <img src="{{ asset($about->image) }}" style="width: 350px; height: 280px; object-fit:contain"
                             alt="">
                     </div>
-                    <p class="m-1 text-center text-primary">Prof.Julliet Rossali</p>
+                    <p class="m-1 text-center text-primary">Prof.Julliet Rossal</p>
                     <p class="text-center text-secondary"><i
                             class="fa-solid fa-envelope text-2xl"></i>Julliet939@gmail.com</p>
                     <p class="text-center text-secondary"><i class="fa-solid fa-location-crosshairs text-2xl"></i>
@@ -117,11 +113,11 @@
         </div>
     </section>
     <div>
-        <h3 class="text-center text-success">STAFF MEMBERS</h3>
+        <h3 class="text-center">STAFF MEMBERS</h3>
         <x-owl />
     </div>
     <section class="m-2">
-        <h3 class="text-center text-success">OUR FACILITIES</h3>
+        <h3 class="text-center">OUR FACILITIES</h3>
         <h6 class="text-center text-secondary">"Providing the best school facilities involves a holistic approach that
             takes into account the physical environment, educational resources, and the well-being of students and
             staff. It's about creating a nurturing and inspiring environment where students can learn, grow, and
@@ -135,15 +131,20 @@
                                 <img src="{{ asset($facility->image) }}" class="image-fluid" alt="">
                             </div>
                         </a>
-                        <a href="{{ route('facilityus') }}">
-                            <div class="text-center text-primary" style="text-decoration: none">
-                                {{ $facility->title }}
-                            </div>
+                        <a href="{{ route('facilityus') }}" style="text-decoration: none">
+                          <div class="text-center">
+                            {{ $facility->title}}
+                          </div>
                         </a>
                     </div>
                 @endforeach
             </div>
         </div>
+        <h3 class="map pt-3">OUR LOCATION</h3>
+        <div class="col-md-12 map p-3">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14256.780136043515!2d87.2709044!3d26.7062156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef6be014bf542b%3A0x3a57f2fbfd950179!2sItahari-20%20Tarahara!5e0!3m2!1sen!2snp!4v1710263387749!5m2!1sen!2snp" width="80%" height="500" style="border:0;" allowfullscreen="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+    </div>
     </section>
     {{-- <section>
         <h3 class="text-center">School Events</h3>

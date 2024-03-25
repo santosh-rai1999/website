@@ -18,10 +18,10 @@
                         <label for="image">Text</label>
                         <input id="image" class="form-control-file" type="file" name="image">
                     </div>
+                    <button type="submit">Upload</button>
                     <div>
                         <img src="{{ asset($gallery->image) }}" width="200" alt="">
                     </div>
-                    <br>
                     <div>
                         <div class="row">
                             @foreach ($gallery->gallery_images as $gallery)
@@ -30,12 +30,22 @@
                                         width="100%" alt="">
                                 </div>
                             @endforeach
+
                         </div>
+                        {{-- <div class="form-group">
+                            <label for="date">Enter Date</label>
+                            <input id="date" class="form-control" type="integer" name="date">
+                        </div> --}}
+
                     </div>
+
+
+
                 </form>
             </div>
 
         </div>
     </div>
+
     </div>
 </x-app-layout>

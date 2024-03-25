@@ -54,7 +54,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="guardian_name">Guardian</label>
+                        <label for="guardian_name">Guardian's Name</label>
                         <input id="guardian_name" class="form-control" type="text" name="guardian_name" required>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                </div>
 
 
-                <button type="submit" class="btn btn-primary btn-sm m-3">Post</button>
+                <button type="submit" class="btn btn-primary btn-sm m-3">Confirm</button>
               </form>
             </div>
         </div>

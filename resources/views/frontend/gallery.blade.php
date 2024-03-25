@@ -1,14 +1,19 @@
 <x-frontendlayout>
-    <div class="container">
-        <div class="row">
+    <div class="col-md-12">
+        <div class="container">
             @foreach ($galleries as $gallery)
                 <div>
                     <a href="singlegallery/{{ $gallery->id }}" style="text-decoration:none">
                         <div class="col-md-3">
-                            <img src="{{ asset($gallery->image) }}" class="m-3" height="200px" width="300px" alt="">
-                    <h6 class=" text-center">We took them out for a walk</h6>
+                            <img src="{{ asset($gallery->image) }}" class="m-1" height="200px" width="300px"
+                                alt="">
+                            <div class="text" style="text-align: center">
+                                {{ $gallery->title }}
+                            </div>
 
                         </div>
+
+
 
                     </a>
                 </div>

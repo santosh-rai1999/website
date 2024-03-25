@@ -21,6 +21,10 @@
                         <label for="images[]">Upload Images</label>
                         <input id="images[]" class="form-control-file" type="file" name="images[]" multiple>
                     </div>
+                    <div class="form-group">
+                        <label for="date">Enter Date</label>
+                        <input id="date" class="form-control" type="integer" name="date">
+                    </div>
                     <button type="submit" class="btn btn-primary btn-sm">Save</button>
                 </form>
             </div>

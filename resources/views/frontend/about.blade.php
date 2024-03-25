@@ -7,7 +7,7 @@
                     {!!$about->description!!}
                 </div>
                 <div class="col-md-3">
-                    <img src="{{asset($about->image)}}" style="width: 320px; height: 225px; object-fit:cover" class="mt-4" alt="">
+                    <img src="{{asset($about->image)}}" style="width: 350px; height: 270px; object-fit:contain" class="mt-4" alt="">
                     <p class="text-center text-primary">Prof.Julliet Rosali</p>
                     <p class="text-center text-secondary"><i class="fa-solid fa-envelope text-2xl"></i>Julliet939@gmail.com</p>
                     <p class="text-center text-secondary"><i class="fa-solid fa-location-crosshairs text-2xl"></i> Dharan-16 Annapurna Chowk</p>

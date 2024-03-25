@@ -11,7 +11,7 @@
                     @else
                         <div class="col-md-4 san order-md-last">
                             <img src="{{ asset($facility->image) }}" alt="">
-                            <p class="text-center text-primary">{{ $facility->title }}</p>
+                            <p class="text-center text-primary" style="text-decoration: none;">{{ $facility->title }}</p>
                         </div>
                     @endif
                     <div class="col-md-8 py-4">
