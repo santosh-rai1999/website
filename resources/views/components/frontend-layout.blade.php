@@ -130,9 +130,9 @@
                 <div class="row p-2">
                     <div class="col-md-4">
                         <h5 class="py-2 text-white">CONTACT US</h5>
-                        <p> Siddhartha Sishu Sadan</p>
-                        <p><i class="fa-solid fa-location-crosshairs text-2xl"></i> Dharan-16 Annapurna Chowk</p>
-                        <p><i class="fa-solid fa-envelope text-2xl"></i> info@siddharthashishusadan.com</p>
+                        <p> Him Shikhar English School</p>
+                        <p><i class="fa-solid fa-location-crosshairs text-2xl"></i> Itahari-20,Tarahara, Sunsari</p>
+                        <p><i class="fa-solid fa-envelope text-2xl"></i> info@himshikharenglish.com</p>
                         <p><i class="fa-solid fa-phone text-2xl"></i> +977-25-523467 | 9825394959</p>
                     </div>
                     <div class="col-md-4">

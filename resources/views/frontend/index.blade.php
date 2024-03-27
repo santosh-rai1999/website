@@ -48,11 +48,11 @@
                         <img src="{{ asset($about->image) }}" style="width: 350px; height: 280px; object-fit:contain"
                             alt="">
                     </div>
-                    <p class="m-1 text-center text-primary">Prof.Julliet Rossal</p>
+                    <p class="m-1 text-center text-primary">Prof.Sailesh Puri</p>
                     <p class="text-center text-secondary"><i
-                            class="fa-solid fa-envelope text-2xl"></i>Julliet939@gmail.com</p>
+                            class="fa-solid fa-envelope text-2xl"></i>Sailesh939@gmail.com</p>
                     <p class="text-center text-secondary"><i class="fa-solid fa-location-crosshairs text-2xl"></i>
-                        Dharan-16 Annapurna Chowk</p>
+                        Itahari-20,Tarahara,Sunsari</p>
                     <p class="text-center text-secondary"><i class="fa-solid fa-phone text-2xl"></i> +977-25-523467 |
                         9825394959</p>
                 </div>
@@ -113,7 +113,7 @@
         </div>
     </section>
     <div>
-        <h3 class="text-center">STAFF MEMBERS</h3>
+        <h3 class="text-center text-red-600">STAFF MEMBERS</h3>
         <x-owl />
     </div>
     <section class="m-2">
