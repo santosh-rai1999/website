@@ -89,6 +89,35 @@
         .owl-carousel {
             object-fit: contain;
         }
+        .shade img:hover {
+            transition: 1s;
+            transform: scale(1.1);
+        }
+        .circle-container {
+        width: 210px; /* Adjust the size of the circle as needed */
+        height: 250px; /* Adjust the size of the circle as needed */
+        border-radius: 50%; /* This creates the circle shape */
+        overflow: hidden;
+        margin-left: 55px  /* This ensures the image doesn't overflow */
+    }
+
+    .circle-container img {
+        width: 100%; /* Make the image fill the container */
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+        /* Remove extra space below image */
+    }
+    /* .gallery-container
+    {
+        margin: 0;
+        padding: 0;
+    } */
+    .gallery-container img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+
+    }
 
 
     </style>

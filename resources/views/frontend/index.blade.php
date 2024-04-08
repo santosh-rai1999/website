@@ -29,8 +29,8 @@
                 <div class="col-md-6">
                     <h4 class="text-center text-primary" style="text-decoration: none">ABOUT ADMINISTRATION</h4>
                     {{-- {!! $about->description !!} --}}
-                    <p class="m-4">Siddhartha Sishu Sadaan School, Dharan is the fore runner of quality education in
-                        Nepal. To date, the campus has produced more than 500 highly qualified students.The scope of
+                    <p class="m-4">Him Shikhar English School,Itahari-20 Tarahara Sunsari,which is the fore runner of quality education in
+                        Nepal. To date.The school has produced more than 500 highly qualified students.The scope of
                         food technology education in Nepal has increased dramatically in the past few years.Dream,
                         Believe, Achieve... are three simple yet very powerful words for our belief-system to succeed.
                         We believe, Dreams are there to be Achieved. Contemporary education is not only about imparting
@@ -43,11 +43,11 @@
                         stepping stones to make every child flourish and excel in their respective set dreams.</p>
                 </div>
                 <div class="col-md-3">
-                    <h4 class="text-center text-primary mb-3" style="text-decoration: none">DIRECTOR</h4>
-                    <div>
-                        <img src="{{ asset($about->image) }}" style="width: 350px; height: 280px; object-fit:contain"
-                            alt="">
-                    </div>
+                    <h4 class="text-center text-primary mb-3" style="text-decoration: none">PRINCIPLE</h4>
+            <div class="circle-container">
+                <img src="{{ asset($about->image) }}" style="width: 350px; height: 280px; object-fit:contain"
+                alt="">
+            </div>
                     <p class="m-1 text-center text-primary">Prof.Sailesh Puri</p>
                     <p class="text-center text-secondary"><i
                             class="fa-solid fa-envelope text-2xl"></i>Sailesh939@gmail.com</p>
