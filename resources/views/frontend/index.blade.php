@@ -112,6 +112,48 @@
             </div>
         </div>
     </section>
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="https://cdn.pixabay.com/photo/2016/06/01/06/26/open-book-1428428_1280.jpg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to E-LEARNING</h1>
+                    <p class="mb-4">“Students do not learn much just sitting in classes listening to teachers, memorizing prepackaged assignments, and spitting out answers. They must talk about what they are learning, write reflectively about it, relate it to past experiences, and apply it to their daily lives. They must make what they learn part of themselves.”
+                    </p>
+                    <p class="mb-4">In our rapidly changing and interconnected world, technology has ushered in a new era of living, working, and learning. The emergence of eLearning stands as one of the most impactful advancements in the field of education. With the widespread availability of the internet and digital devices, eLearning has transformed the way knowledge is accessed, opening doors to learners of all backgrounds and ages.</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div>
         <h3 class="text-center text-red-600">STAFF MEMBERS</h3>
         <x-owl />
@@ -146,28 +188,5 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14256.780136043515!2d87.2709044!3d26.7062156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef6be014bf542b%3A0x3a57f2fbfd950179!2sItahari-20%20Tarahara!5e0!3m2!1sen!2snp!4v1710263387749!5m2!1sen!2snp" width="80%" height="500" style="border:0;" allowfullscreen="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
     </div>
     </section>
-    {{-- <section>
-        <h3 class="text-center">School Events</h3>
-        <div class="col-md-12 m-2">
-            <div class="row">
-                @foreach ($events as $event)
-                    <div class="col-md-3">
-                        <a href="{{ route('eventus') }}">
-                            <div class="san">
-                                <img src="{{ asset($event->image) }}" class="image-fluid" alt="">
-                            </div>
-                        </a>
-                        <a href="{{ route('eventus') }}">
-                            <div class="text-center text-primary">
-                                {{ $event->title }}
-                            </div>
-                        </a>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
- --}}
-
 
 </x-frontendlayout>

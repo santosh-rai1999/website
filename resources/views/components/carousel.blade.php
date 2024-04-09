@@ -1,6 +1,6 @@
 <div>
     <div id="carouselExampleDark" data-bs-ride="carousel" class="carousel carousel-white slide carousel-fade"
-        data-interval="500">
+        data-interval="1000">
 
         <div class="carousel-inner image">
             @foreach ($carousel as $index => $images)

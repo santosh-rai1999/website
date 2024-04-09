@@ -157,19 +157,19 @@
         <footer class="footer" style="background-color: gray;">
             <div class="container">
                 <div class="row p-2">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <h5 class="py-2 text-white">CONTACT US</h5>
                         <p> Him Shikhar English School</p>
                         <p><i class="fa-solid fa-location-crosshairs text-2xl"></i> Itahari-20,Tarahara, Sunsari</p>
                         <p><i class="fa-solid fa-envelope text-2xl"></i> info@himshikharenglish.com</p>
                         <p><i class="fa-solid fa-phone text-2xl"></i> +977-25-523467 | 9825394959</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <h5 class="text-white">QUICK LINK</h5>
                         <a href="/" class="text-black m-2" style="text-decoration: none">Home</a><br>
                         <a href="/aboutus" class="text-black m-2" style="text-decoration: none">About</a><br>
                         <a href="/galleryus" class="text-black m-2" style="text-decoration: none">Gallery</a><br>
-                        <a href="/notices" class="text-black m-2" style="text-decoration: none">Notice</a><br>
+                        {{-- <a href="/notices" class="text-black m-2" style="text-decoration: none">Notice</a><br> --}}
                         <a href="/staffus" class="text-black m-2" style="text-decoration: none">Staffs</a><br>
                         {{-- <a href="" class="text-black">Events</a><br> --}}
                         <a href="/facilityus" class="text-black m-2" style="text-decoration: none">Facilities</a><br>
@@ -177,8 +177,16 @@
 
 
                     </div>
-                    <div class="col-md-4">
-                        <h5 class="text-white">ACCOUNT DETAILS</h5>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-white">Email Us</h5>
+                        <div class="w-100">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-light" style="padding: 15px;" placeholder="Your Email Address">
+                             <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"><div class="input-group-append">
+                                <button class="btn btn-primary px-4 m-2">Sign Up</button>
+                            </div></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -189,6 +197,10 @@
             </div>
 
         </footer>
+
+
+
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -231,6 +243,8 @@
             owl.trigger('stop.owl.autoplay')
         })
     </script>
+
+
 
 </body>
 

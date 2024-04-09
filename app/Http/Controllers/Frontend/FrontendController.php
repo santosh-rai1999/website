@@ -35,6 +35,7 @@ class FrontendController extends BaseController
     public function notice()
     {
         $notices = Notice::all();
+        // $notices = Notice::latest()->take(3)->get();
        return view('frontend.notice',compact('notices'));
     }
     public  function facility()
