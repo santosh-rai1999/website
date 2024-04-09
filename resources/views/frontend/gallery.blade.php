@@ -7,7 +7,7 @@
                       <div class="gallery-container">
                         <img src="{{ asset($gallery->image) }}" class="m-3" style="height: 250px" alt="">
                       </div>
-                        <div class="text-center">
+                        <div class="text-center mb-2">
                             {{ $gallery->title }}
                         </div>
                     </a>
