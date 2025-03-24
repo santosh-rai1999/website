@@ -65,8 +65,6 @@
                     </div>
                 </div>
                </div>
-
-
                 <button type="submit" class="btn btn-primary btn-sm m-3">Confirm</button>
               </form>
             </div>

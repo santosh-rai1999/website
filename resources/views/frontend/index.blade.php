@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h6 class="section-title bg-white  text-bold btn btn-primary btn-md text-primary pe-3">About Us</h6>
                     <h1 class="mb-4">Welcome to E-LEARNING</h1>
                     <p class="mb-4">“Students do not learn much just sitting in classes listening to teachers,
                         memorizing prepackaged assignments, and spitting out answers. They must talk about what they are

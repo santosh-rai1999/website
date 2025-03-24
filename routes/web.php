@@ -52,7 +52,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('gallery',GalleryController::class)->names('gallery');
     Route::resource('carousel',CarouselController::class)->names('carousel');
     Route::resource('facility',FacilityController::class)->names('facility');
-    Route::resource('contact',ContactController::class)->names('contact');
+    // Route::resource('contact',ContactController::class)->names('contact');
     // Route::resource('admission',AdmissionController::class)->names('admission');
 });
 
